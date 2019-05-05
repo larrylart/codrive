@@ -1,6 +1,6 @@
 # Coral TPU / c++ sample app / Mobilenet SSD v2
 
-Quick sample to test google's tpu performance with:
+### Quick sample to test google's tpu performance with:
 
 * **Odroid XU4 + USB Edge TPU + Logitech c920 / Ubuntu 18.04 / 4.14**
 
