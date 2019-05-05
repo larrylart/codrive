@@ -6,12 +6,14 @@ Quick sample to test google's tpu performance with:
 
 * **Coral SBC + Google's MIPI-CSI 5MP camera / Mendel (Debian) / 4.9**
 
-## Results 
+### Results Odroid XU4 with USB TPU
 
 * **odroid xu4 at idle**: 3.1 W
 * **odroid xu4 + TPU + Logitech 920 WEBCAM**: 6.1 W - 24.89 Real FPS / 42.90 Inference FPS (23ms) -  load average: 0.52
 * **odroid xu4 + Logitech 920 WEBCAM + app dry run (no tpu)**: 4.9 W - load average: 0.64, 0.61, 0.62
 * **USB TPU power usage**: 1W - 1.2 W 
+
+### Results Coral Dev Board
 
 * **TPU DEV BOARD idle**: 2.7 W
 * **TPU DEV BOARD + Logitech 920 WEBCAM**: 5.4 W - 24.10 Real FPS / 78.15 Inference FPS (13ms) - load average: 0.70
