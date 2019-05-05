@@ -8,15 +8,15 @@ Quick sample to test google's tpu performance with:
 
 ## Results 
 
-odroid xu4 at idle: 3.1 W
-odroid xu4 + TPU + Logitech 920 WEBCAM: 6.1 W - 24.89 Real FPS / 42.90 Inference FPS (23ms) -  load average: 0.52, 0.58, 0.62
-odroid xu4 + Logitech 920 WEBCAM + app dry run (no tpu): 4.9 W - load average: 0.64, 0.61, 0.62
-TPU power usage: 1W - 1.2 W 
+* **odroid xu4 at idle**: 3.1 W
+* **odroid xu4 + TPU + Logitech 920 WEBCAM**: 6.1 W - 24.89 Real FPS / 42.90 Inference FPS (23ms) -  load average: 0.52
+* **odroid xu4 + Logitech 920 WEBCAM + app dry run (no tpu)**: 4.9 W - load average: 0.64, 0.61, 0.62
+* **USB TPU power usage**: 1W - 1.2 W 
 
-TPU DEV BOARD idle: 2.7 W
-TPU DEV BOARD + Logitech 920 WEBCAM: 5.4 W - 24.10 Real FPS / 78.15 Inference FPS (13ms) - load average: 0.87, 0.58, 0.26
-TPU DEV BOARD + MIPI 5MP CAM: 4.5 W - 29.4 Real FPS / 78.70 Inference FPS (13ms) - load average: 0.87, 0.58, 0.26
-TPU DEV BOARD - ETH = - 0.6W
+* **TPU DEV BOARD idle**: 2.7 W
+* **TPU DEV BOARD + Logitech 920 WEBCAM**: 5.4 W - 24.10 Real FPS / 78.15 Inference FPS (13ms) - load average: 0.70
+* **TPU DEV BOARD + MIPI 5MP CAM**: 4.5 W - 29.4 Real FPS / 78.70 Inference FPS (13ms) - load average: 0.87, 0.58, 0.26
+* **TPU DEV BOARD - ETH** = - 0.6W
 
 ## How to get the sample to work 
 
@@ -34,7 +34,7 @@ make
 
 * Install **opencv 4.1** - sample should work with older verions, v2 with small a modification, see makefile
 
-* Install **tensor flow**. Note that there are static libraries for armv7 and aarch64 (coral sbc) included in this release see lib/libtensorflow-lite_armv7l.a, libtensorflow-lite_aarch64.a
+* Install **tensor flow**. Note, tf static libraries for armv7 and aarch64 (coral sbc) are included in this release, see lib/libtensorflow-lite_armv7l.a, libtensorflow-lite_aarch64.a
 
 ```sh
 git clone https://github.com/tensorflow/tensorflow.git
