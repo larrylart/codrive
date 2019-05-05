@@ -22,9 +22,10 @@
 
 ### Results Coral Dev Board Inference times/FPS
 
-* **USB TPU throttled** 23ms / 42 FPS
-* **USB TPU direct** 17ms / 57 FPS
-* **TPU DEV BOARD** 12ms / 79 FPS
+| **USB TPU throttled** | 23ms | 42 FPS |
+| ------- | ------- | ------- |
+| **USB TPU direct** | 17ms | 57 FPS |
+| **TPU DEV BOARD** | 12ms | 79 FPS |
 
 ## How to get the sample to work 
 
