@@ -1,4 +1,4 @@
-# Coral TPU / c++ sample app / Mobilenet SSD v2
+# Google Coral TPU / c++ example app / Mobilenet SSD v2
 
 ### Quick sample to test google's tpu performance with:
 
