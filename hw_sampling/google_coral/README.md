@@ -47,7 +47,11 @@ make
 
 ```sh
 git clone https://github.com/tensorflow/tensorflow.git
+# as tensorflow/lite is under heavy development, in case you encounter errors compiling to current commit try this to reset to the version I managed to compile
+git reset --hard 7051274e6ba1da5eb6c237d981c589c37b382047
 cd tensorflow/lite
+# first run this to download dependecies
+tools/make/download_dependencies.sh
 # for armv7 you can use this script to build
 tools/make/build_rpi_lib.sh
 # for coral dev board - quick hack
