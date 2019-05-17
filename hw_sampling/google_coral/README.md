@@ -30,6 +30,7 @@
 ## How to get the sample to work 
 
 ```sh
+# Edit Makefile and change TF_PATH= to your your tensorflow instalation path
 make
 # specify the id of your camera 0=default
 ./tpu_obj_detect --camera_device=0 
@@ -47,8 +48,6 @@ make
 
 ```sh
 git clone https://github.com/tensorflow/tensorflow.git
-# as tensorflow/lite is under heavy development, in case you encounter errors compiling to current commit try this to reset to the version I managed to compile
-git reset --hard 7051274e6ba1da5eb6c237d981c589c37b382047
 cd tensorflow/lite
 # first run this to download dependecies
 tools/make/download_dependencies.sh
@@ -56,8 +55,12 @@ tools/make/download_dependencies.sh
 tools/make/build_rpi_lib.sh
 # for coral dev board - quick hack
 cp tools/make/build_rpi_lib.sh tools/make/build_coral_lib.sh
-# modify as follow and run
+# modify as follow and run*
 CC_PREFIX=aarch64-linux-gnu- 
 make -j 3 -f tensorflow/lite/tools/make/Makefile TARGET=rpi TARGET_ARCH=cortex-a57
+
+# *Note: as tensorflow/lite is under heavy development, in case you encounter to many errors while compiling it, try this to reset to the version I managed to compile succesfuly 
+git reset --hard 7051274e6ba1da5eb6c237d981c589c37b382047
+
 ```
 
