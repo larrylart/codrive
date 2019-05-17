@@ -59,7 +59,8 @@ cp tools/make/build_rpi_lib.sh tools/make/build_coral_lib.sh
 CC_PREFIX=aarch64-linux-gnu- 
 make -j 3 -f tensorflow/lite/tools/make/Makefile TARGET=rpi TARGET_ARCH=cortex-a57
 
-# *Note: as tensorflow/lite is under heavy development, in case you encounter to many errors while compiling it, try this to reset to the version I managed to compile succesfuly 
+# *Note: as tensorflow/lite is under heavy development, in case you encounter to many errors while compiling it, 
+# try this to reset to the version I managed to compile succesfuly 
 git reset --hard 7051274e6ba1da5eb6c237d981c589c37b382047
 
 ```
