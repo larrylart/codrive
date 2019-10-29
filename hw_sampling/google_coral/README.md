@@ -30,7 +30,7 @@
 ### Results Jetson Nano with M.2 A/E Coral board
 
 * **JETSON NANO idle**: 2.1 W (2.5 W with cam)
-* **JETSON NANO + Logitech 920 WEBCAM**: 4.6 W - 29.94 Real FPS  / 110.23 Inference FPS (9ms) - load average: 0.74, 0.48, 0.22
+* **JETSON NANO + Logitech 920 WEBCAM**: 4.5 W - 29.94 Real FPS  / 110.23 Inference FPS (9ms) - load average: 0.74, 0.48, 0.22
 
 ## How to get the sample to work 
 
