@@ -27,6 +27,11 @@
 | **USB TPU direct** | 17ms | 57 FPS |
 | **USB TPU throttled** | 23ms | 42 FPS |
 
+### Results Jetson Nano with M.2 A/E Coral board
+
+* **JETSON NANO idle**: 2.1 W (2.5 W with cam)
+* **JETSON NANO + Logitech 920 WEBCAM**: 4.4 W - 29.94 Real FPS  / 110.23 Inference FPS (9ms) - load average: 0.74, 0.48, 0.22
+
 ## How to get the sample to work 
 
 ```sh
