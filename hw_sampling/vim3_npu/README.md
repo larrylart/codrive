@@ -15,13 +15,13 @@
 # Edit Makefile and change AML_SDK_PATH= to your AML/SDK instalation path
 make
 # display video window
-./tpu_obj_detect --gui=true
+./aml_obj_detect --gui=true
 # specify the id of your camera 0=default
-./tpu_obj_detect --camera_device=0 
+./aml_obj_detect --camera_device=0 
 # to save last image awith nnotation to a file add --annotate, it will save obj_detect_note.jpg in current path
-./tpu_obj_detect --camera_device=0 --annotate
+./aml_obj_detect --camera_device=0 --annotate
 # to use a video instead of camera try
-./tpu_obj_detect --video=test.mp4 --annotate
+./aml_obj_detect --video=test.mp4 --annotate
 ```
 
 ## Required
